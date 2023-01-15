@@ -6,6 +6,11 @@ $(document).ready(function() {
     // uncomment below for on-scroll animations to played only once
     // once: true  
   }); // initialize animate on scroll library
+  var dob = '25-03-1999';
+  var today = new Date();
+  age = today.getFullYear() - dob;
+  console.log(today);
+  $('#age').val(age);
 });
 
 // Smooth scroll for links with hashes
